@@ -1,69 +1,73 @@
 //Access DOM
 var generateBtn = document.querySelector("#generate");
 
-
-
+var Lowercase = "";
+var Uppercase = "";
+var Numbers = "";
+var Symbols = "";
 //Make an Object out of functions
 const randoObj = {
-    Lowercase :funcLower,
-    Uppercase :funcUpper,
-    Numbers : funcNumber,
-    Symbols : funcSymbol,
+    confirmLowercase :funcLower,
+    confirmUppercase :funcUpper,
+    confirmNumbers : funcNumber,
+    confirmSymbols : funcSymbol,
 }
 
 // Write password to the #password input
-
+let promptLength =[];
 function writePassword() {
-const promptLength = +prompt("Pick a password length between 8-128");
+ promptLength = +prompt("Pick a password length between 8-128");
 const confirmLowercase = confirm("include Lowercase characters?");
 const confirmUppercase = confirm("include Uppercase characters?");
 const confirmNumbers = confirm("include Number characters?");
 const confirmSymbols = confirm("include Symbol characters?");
 
-  var password = generatePassword(hasLowercase, hasUppercase, hasNumbers, hasSymbols, length);{
-      const choseChr = Lowercase + Uppercase + Numbers + Symbols;
-      const choseArr = [{Lowercase} + {Uppercase} + {Numbers} + {Symbols}].filter(jawn => Object.value(jawn)[0]);
-  }
+  //var password = generatePassword(hasLowercase, hasUppercase, hasNumbers, hasSymbols, length);{
+      const choseChr = confirmLowercase + confirmUppercase + confirmNumbers + confirmSymbols;
+      const choseArr = [{confirmLowercase} , {confirmUppercase} , {confirmNumbers} , {confirmSymbols}].filter(jawn => Object.values(jawn)[0]);
+ // }
       if(choseChr === 0){
           alert ("Ayo! you must confirm at least one character type!");
       }
-      for (let i=0; i<length; i += choseChr){
+      var password = "";
+      for (let i=0; i<promptLength; i += choseChr){
           choseArr.forEach(type => {
               const funcName = Object.keys(type)[0];
               password += randoObj[funcName]();
           });
-      }
+      }// generatePassword();
     
   
-  var passwordText = document.querySelector("#password");{
-      return passwordText
-  }
+  var passwordText = document.querySelector("#password");
+      passwordText.value = password;
+     // return passwordText
+  
 
-  passwordText.value = password.slice(0,length);
+  //passwordText.value = password.slice(0,length);
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);{
+generateBtn.addEventListener("click", writePassword);/*{
     const length = promptLength;
     const hasLowercase = confirmLowercase;
     const hasUppercase = confirmUppercase;
     const hasNumbers = confirmNumbers;
     const hasSymbols = confirmSymbols
-}
+}*/
 
 function funcLower (){
-    return String.fromCharCode(math.floor(math.random()* 26)+97);
+    return String.fromCharCode(Math.floor(Math.random()* 26)+97);
 }
 
 function funcUpper (){
-    return String.fromCharCode(math.floor(math.random()* 26)+65);
+    return String.fromCharCode(Math.floor(Math.random()* 26)+65);
 }
 
 function funcNumber (){
-    return String.fromCharCode(math.floor(math.random()* 10)+48);
+    return String.fromCharCode(Math.floor(Math.random()* 10)+48);
 }
 function funcSymbol (){
     const symbols = "!@#$%^&*()=+_-"
-    return symbols [Math.floor(math.random()*symbols.length)];
+    return symbols [Math.floor(Math.random()*symbols.length)];
 }
 
