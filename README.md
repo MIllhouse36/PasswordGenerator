@@ -4,11 +4,10 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-  Generate complez safe passwords for all of your personal accounts. Stop using easily compromised passwords and use this password generator. 
+  Generate complex safe passwords for all of your personal accounts. Stop using easily compromised passwords and use this password generator. 
 
 ## Usage 
-[the deployed website](https://millhouse36.github.io/passwordGenerator/)
-
+Navigate to[the deployed website](https://millhouse36.github.io/passwordGenerator/). Click "generate password" and you will be given the option to choose the length of your password, whether it includes lowercase characters, uppercase characters, numbers, or symbols. After you finish the prompts your will be given a password meeting all of your selected parameters. 
 
 ## Contributing to Password Generator  
 To contribute to Password Generator , follow these steps:
