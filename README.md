@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Password Generator
 ![password_generator](https://user-images.githubusercontent.com/37388720/120094329-bb794080-c0ed-11eb-80dc-3a32777c3b4b.png)
@@ -33,3 +34,6 @@ https://millhouse36.github.io/passwordGenerator/
 If you have and questions contact me @
 [Kevin Millhouse](https://github.com/MIllhouse36)
 or [Email](https://millhousekevin@gmail.com)
+=======
+Password Generator
+>>>>>>> 8559b4335d79f4ac5b37849f7938207a4a17e75c
