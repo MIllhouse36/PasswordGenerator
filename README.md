@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-
+  Generate complez safe passwords for all of your personal accounts. Stop using easily compromised passwords and use this password generator. 
 
 ## Usage 
 [the deployed website](https://millhouse36.github.io/passwordGenerator/)
